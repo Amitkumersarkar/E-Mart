@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div>
-
+        <h2 className='bg-red-500'>hello react</h2>
       </div>
     </>
   )
