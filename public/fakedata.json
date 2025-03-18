@@ -1,12 +1,4 @@
 {
-    "store_name": "FakeMart",
-    "categories": [
-        "Electronics",
-        "Clothing",
-        "Home & Kitchen",
-        "Books",
-        "Sports & Outdoors"
-    ],
     "products": [
         {
             "id": 1,
