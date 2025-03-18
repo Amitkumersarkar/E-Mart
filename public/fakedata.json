@@ -1,0 +1,101 @@
+{
+    "store_name": "FakeMart",
+    "categories": [
+        "Electronics",
+        "Clothing",
+        "Home & Kitchen",
+        "Books",
+        "Sports & Outdoors"
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Wireless Bluetooth Headphones",
+            "category": "Electronics",
+            "price": 49.99,
+            "stock": 120,
+            "rating": 4.5,
+            "description": "High-quality wireless headphones with noise cancellation and long battery life.",
+            "image_url": "https://via.placeholder.com/150"
+        },
+        {
+            "id": 2,
+            "name": "Men's Casual T-Shirt",
+            "category": "Clothing",
+            "price": 19.99,
+            "stock": 200,
+            "rating": 4.2,
+            "description": "Soft cotton T-shirt available in multiple colors and sizes.",
+            "image_url": "https://via.placeholder.com/150"
+        },
+        {
+            "id": 3,
+            "name": "Non-Stick Frying Pan",
+            "category": "Home & Kitchen",
+            "price": 24.99,
+            "stock": 80,
+            "rating": 4.7,
+            "description": "Durable non-stick frying pan with heat-resistant handle.",
+            "image_url": "https://via.placeholder.com/150"
+        },
+        {
+            "id": 4,
+            "name": "Bestselling Novel - Fiction",
+            "category": "Books",
+            "price": 14.99,
+            "stock": 150,
+            "rating": 4.8,
+            "description": "A thrilling bestselling novel with a captivating storyline.",
+            "image_url": "https://via.placeholder.com/150"
+        },
+        {
+            "id": 5,
+            "name": "Yoga Mat - Extra Thick",
+            "category": "Sports & Outdoors",
+            "price": 29.99,
+            "stock": 100,
+            "rating": 4.6,
+            "description": "Comfortable and non-slip yoga mat for all fitness levels.",
+            "image_url": "https://via.placeholder.com/150"
+        }
+    ],
+    "users": [
+        {
+            "id": 101,
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "address": "123 Main St, New York, NY",
+            "orders": [
+                {
+                    "order_id": 5001,
+                    "product_id": 1,
+                    "quantity": 1,
+                    "total_price": 49.99,
+                    "status": "Shipped"
+                },
+                {
+                    "order_id": 5002,
+                    "product_id": 4,
+                    "quantity": 2,
+                    "total_price": 29.98,
+                    "status": "Processing"
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "name": "Jane Smith",
+            "email": "janesmith@example.com",
+            "address": "456 Oak St, Los Angeles, CA",
+            "orders": [
+                {
+                    "order_id": 5003,
+                    "product_id": 3,
+                    "quantity": 1,
+                    "total_price": 24.99,
+                    "status": "Delivered"
+                }
+            ]
+        }
+    ]
+}
