@@ -1,8 +1,14 @@
 import './Navbar.css';
 const Navbar = () => {
     return (
-        <div>
-            <h3 className='text-3xl font-bold text-cyan-600'>hello</h3>
+        <div className='style'>
+            <p className='font-bold'>E-Mart</p>
+            <ul className='flex justify-between gap-4 font-bold'>
+                <li>Home</li>
+                <li>Product</li>
+                <li>Cart</li>
+                <p>$500</p>
+            </ul>
         </div>
     );
 };
