@@ -7,8 +7,9 @@ function App() {
 
   return (
     <>
-      <div>
-        <Navbar></Navbar>
+      <Navbar></Navbar>
+
+      <div className='flex justify-around items-center p-4 font-semibold text-cyan-700'>
         <AllProducts></AllProducts>
         <CartContainer></CartContainer>
       </div>
