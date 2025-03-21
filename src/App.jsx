@@ -35,7 +35,7 @@ function App() {
 
       <div className='flex justify-around items-center p-4 font-semibold text-cyan-700'>
         <AllProducts></AllProducts>
-        <CartContainer></CartContainer>
+        <CartContainer handleIsActiveState={ }></CartContainer>
       </div>
     </>
   )
