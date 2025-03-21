@@ -1,3 +1,5 @@
+import Cart from '../Cart/Cart';
+import About from '../Cart/About/About'
 import './CartContainer.css';
 const CartContainer = ({ handleIsActiveState, isActive }) => {
 
@@ -12,6 +14,8 @@ const CartContainer = ({ handleIsActiveState, isActive }) => {
                     <button onClick={() => handleIsActiveState("about")} className={`${isActive.cart ? " btn" : "active btn"}`}>ABOUT</button>
                 </div>
             </div>
+            {/* Conditional rendering */}
+            {isActive.cart ? <Cart></Cart> : <About></About>}
         </div>
     );
 };
