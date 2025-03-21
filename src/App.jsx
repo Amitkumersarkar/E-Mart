@@ -8,9 +8,27 @@ function App() {
 
   const [isActive, setIsActive] = useState({
     cart: true,
-    status: "active",
+    status: "active"
   })
-  console.log(isActive);
+  // console.log(isActive);
+
+  const handleIsActiveState = (status) => {
+    if (status == "cart") {
+      setIsActive({
+        cart: true,
+        status: "active"
+      })
+    }
+    else {
+      setIsActive({
+        cart: false,
+        status: "active"
+      })
+
+    }
+  }
+
+
   return (
     <>
       <Navbar></Navbar>
