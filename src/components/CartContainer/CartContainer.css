@@ -1,11 +1,11 @@
 .btn {
-    border: 2px solid rgb(232, 135, 235);
+    border: 1px solid rgb(232, 97, 82);
     border-radius: 15px;
-    padding: 10px 20px;
-    background-color: bisque;
+    padding: 0px 20px;
+    background-color: rgb(245, 231, 216);
 }
 
 .active {
-    background-color: blueviolet;
-    color: antiquewhite;
+    background-color: rgb(103, 103, 248);
+    color: whitesmoke;
 }

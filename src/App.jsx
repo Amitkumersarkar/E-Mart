@@ -35,8 +35,10 @@ function App() {
       <Navbar></Navbar>
 
       <div className='flex justify-around items-center p-4 font-semibold text-cyan-700'>
+
         <AllProducts></AllProducts>
-        <CartContainer handleIsActiveState={handleIsActiveState}></CartContainer>
+
+        <CartContainer isActive={isActive} handleIsActiveState={handleIsActiveState}></CartContainer>
       </div>
     </>
   )
