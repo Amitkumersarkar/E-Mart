@@ -1,7 +1,7 @@
 import './CartContainer.css';
 const CartContainer = ({ handleIsActiveState }) => {
 
-    console.log(handleIsActiveState);
+    // console.log(handleIsActiveState);
 
     return (
         <div>

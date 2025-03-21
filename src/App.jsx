@@ -16,18 +16,19 @@ function App() {
     if (status == "cart") {
       setIsActive({
         cart: true,
-        status: "active"
+        status: "cart"
       })
     }
     else {
       setIsActive({
         cart: false,
-        status: "active"
+        status: "about"
       })
 
     }
   }
 
+  console.log(isActive);
 
   return (
     <>
