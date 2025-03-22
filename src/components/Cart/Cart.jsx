@@ -7,7 +7,7 @@ const Cart = ({ selectedProduct }) => {
                 selectedProduct.map((product) => (
 
                     <div>
-                        <div className="flex gap-4">
+                        <div className="flex gap-4 p-4">
                             <img className="w-18" src={product.image_url} alt="" />
                             <p>Name : {product.name} </p>
                             <p>Price : {product.price} </p>
