@@ -20,6 +20,17 @@ function App() {
   const handleSelectedProduct = (product) => {
     // console.log(product);
 
+    const isExist = selectedProduct.find((p) => p.id == product.id);
+
+    if (isExist) {
+      console.log("Not Found")
+    }
+    else {
+      console.log("still have");
+    }
+
+    // console.log(isExist);
+
     const newProducts = [...selectedProduct, product]
     // console.log(newProducts);
     setSelectedProduct(newProducts);
