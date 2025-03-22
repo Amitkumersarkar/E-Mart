@@ -3,7 +3,7 @@ const SingleProduct = ({ product, handleSelectedProduct }) => {
     console.log(handleSelectedProduct);
 
     const { category, description, id, image_url, name, price, rating, stock } = product;
-    // console.log(product);
+    console.log(product);
     return (
         <div className='card '>
             <img className='img' src={image_url} alt="" />
