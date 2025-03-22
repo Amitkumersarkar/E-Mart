@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import AllProducts from './components/AllProducts/AllProducts';
+import AllProducts from './components/Allproducts/AllProducts';
 import CartContainer from './components/CartContainer/CartContainer';
 import Navbar from './components/Header/Navbar';
 
