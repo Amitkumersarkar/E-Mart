@@ -7,8 +7,8 @@ const CartContainer = ({ handleIsActiveState, isActive }) => {
 
     return (
         <div>
-            <h1 className='font-bold text-black'>Cart Container</h1>
-            <div className='flex justify-between gap-4 pt-1 cursor-pointer'>
+            <h1 className=' font-bold text-black '>Cart Container</h1>
+            <div className='flex justify-between gap-4 pt-2 p-7 gap-x-5 cursor-pointer'>
                 <button onClick={() => handleIsActiveState("cart")} className={`${isActive.cart ? "btn active" : " btn"}`}>CART</button>
                 <div>
                     <button onClick={() => handleIsActiveState("about")} className={`${isActive.cart ? " btn" : "active btn"}`}>ABOUT</button>

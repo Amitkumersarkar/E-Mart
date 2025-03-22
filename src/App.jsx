@@ -11,7 +11,7 @@ function App() {
     cart: true,
     status: "active"
   })
-  // console.log(isActive);
+  console.log(isActive);
 
   const handleIsActiveState = (status) => {
     if (status == "cart") {
@@ -35,7 +35,7 @@ function App() {
     <>
       <Navbar></Navbar>
 
-      <div className='flex justify-around items-center p-4 font-semibold text-cyan-700'>
+      <div className='flex  p-4 font-semibold text-cyan-700'>
 
         <AllProducts></AllProducts>
 

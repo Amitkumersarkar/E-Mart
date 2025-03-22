@@ -5,7 +5,7 @@ const SingleProduct = ({ product }) => {
     // console.log(product);
 
     return (
-        <div className='card'>
+        <div className='card '>
             <img className='img' src={image_url} alt="" />
             <p>ID : {id}</p>
             <p>Category : {category}</p>
@@ -17,7 +17,7 @@ const SingleProduct = ({ product }) => {
                 <p>Description : {description}</p>
             </div>
             <br />
-            <div  className='p-2 cursor-pointer rounded-3xl text-amber-50 bg-cyan-500'>
+            <div className='p-2 cursor-pointer rounded-3xl text-amber-50 bg-cyan-500'>
                 <button>Add To Cart</button>
             </div>
         </div>
