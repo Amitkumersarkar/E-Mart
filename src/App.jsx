@@ -62,7 +62,7 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar selectedProduct={selectedProduct}></Navbar>
 
       <div className='flex gap-60  p-4 font-semibold text-cyan-700'>
 
