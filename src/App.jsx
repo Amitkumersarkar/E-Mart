@@ -16,6 +16,14 @@ function App() {
   // declared new state
   const [selectedProduct, setSelectedProduct] = useState([]);
 
+  //navbar price section useState 
+
+  const [price, setPrice] = useState(0);
+
+  const handleAddIncreasedPrice = (pr) => {
+    setPrice(price + pr);
+  }
+
   // manipulate state here
   const handleSelectedProduct = (product) => {
     // console.log(product);
@@ -27,6 +35,7 @@ function App() {
       alert("No More Products Addable");
     }
     else {
+      handleAddIncreasedPrice(product.price);
       // console.log("Not Found");
       const newProducts = [...selectedProduct, product]
       setSelectedProduct(newProducts);
@@ -62,7 +71,7 @@ function App() {
 
   return (
     <>
-      <Navbar selectedProduct={selectedProduct}></Navbar>
+      <Navbar price={price} selectedProduct={selectedProduct}></Navbar>
 
       <div className='flex gap-60  p-4 font-semibold text-cyan-700'>
 
