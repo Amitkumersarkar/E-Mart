@@ -1,9 +1,9 @@
 import './SingleProduct.css';
-const SingleProduct = ({ product }) => {
+const SingleProduct = ({ product, handleSelectedProduct }) => {
+    console.log(handleSelectedProduct);
 
     const { category, description, id, image_url, name, price, rating, stock } = product;
     // console.log(product);
-
     return (
         <div className='card '>
             <img className='img' src={image_url} alt="" />
@@ -18,7 +18,7 @@ const SingleProduct = ({ product }) => {
             </div>
             <br />
             <div className='p-2 cursor-pointer rounded-3xl text-amber-50 bg-cyan-500'>
-                <button>Add To Cart</button>
+                <button onClick={() => handleSelectedProduct(product)} key={product.id}>Add To Cart</button>
             </div>
         </div>
 

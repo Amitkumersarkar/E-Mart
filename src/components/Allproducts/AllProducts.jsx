@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './AllProducts.css';
 import SingleProduct from '../singleProduct/SingleProduct';
-const AllProducts = () => {
+const AllProducts = ({ handleSelectedProduct }) => {
 
     const [products, setProducts] = useState([]);
 
@@ -17,7 +17,7 @@ const AllProducts = () => {
 
             {/* mam on singleProduct */}
             {
-                products.map((product) => <SingleProduct key={product.id} product={product}></SingleProduct>)
+                products.map((product) => <SingleProduct handleSelectedProduct={handleSelectedProduct} key={product.id} product={product}></SingleProduct>)
             }
         </div>
     );
