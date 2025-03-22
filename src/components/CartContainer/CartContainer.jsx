@@ -1,7 +1,7 @@
 import Cart from '../Cart/Cart';
 import About from '../Cart/About/About'
 import './CartContainer.css';
-const CartContainer = ({ handleIsActiveState, isActive }) => {
+const CartContainer = ({ handleIsActiveState, isActive, selectedProduct }) => {
 
     // console.log(isActive);
 
@@ -15,7 +15,7 @@ const CartContainer = ({ handleIsActiveState, isActive }) => {
                 </div>
             </div>
             {/* Conditional rendering */}
-            {isActive.cart ? <Cart></Cart> : <About></About>}
+            {isActive.cart ? <Cart selectedProduct={selectedProduct}></Cart> : <About></About>}
         </div>
     );
 };

@@ -68,7 +68,7 @@ function App() {
 
         <AllProducts handleSelectedProduct={handleSelectedProduct}></AllProducts>
 
-        <CartContainer isActive={isActive} handleIsActiveState={handleIsActiveState}></CartContainer>
+        <CartContainer selectedProduct={selectedProduct} isActive={isActive} handleIsActiveState={handleIsActiveState}></CartContainer>
 
       </div>
 
