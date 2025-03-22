@@ -23,17 +23,18 @@ function App() {
     const isExist = selectedProduct.find((p) => p.id == product.id);
 
     if (isExist) {
-      console.log("Not Found")
+      // console.log("still Found since before");
+      alert("No More Products Addable");
     }
     else {
-      console.log("still have");
+      // console.log("Not Found");
+      const newProducts = [...selectedProduct, product]
+      setSelectedProduct(newProducts);
     }
 
     // console.log(isExist);
 
-    const newProducts = [...selectedProduct, product]
     // console.log(newProducts);
-    setSelectedProduct(newProducts);
   }
   console.log(selectedProduct);
 

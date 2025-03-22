@@ -10,7 +10,7 @@ const AllProducts = ({ handleSelectedProduct }) => {
             .then(res => res.json())
             .then(data => setProducts(data.products))
     }, [])
-    console.log(products);
+    // console.log(products);
     return (
         <div>
             <h1 className='text-3xl pb-2 pl-5  text-black'>All Products</h1>

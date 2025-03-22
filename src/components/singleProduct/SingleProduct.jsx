@@ -1,6 +1,6 @@
 import './SingleProduct.css';
 const SingleProduct = ({ product, handleSelectedProduct }) => {
-    console.log(handleSelectedProduct);
+    // console.log(handleSelectedProduct);
 
     const { category, description, id, image_url, name, price, rating, stock } = product;
     // console.log(product);

@@ -3,7 +3,7 @@ import About from '../Cart/About/About'
 import './CartContainer.css';
 const CartContainer = ({ handleIsActiveState, isActive }) => {
 
-    console.log(isActive);
+    // console.log(isActive);
 
     return (
         <div>
