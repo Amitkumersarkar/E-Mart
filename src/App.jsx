@@ -18,8 +18,14 @@ function App() {
 
   // manipulate state here
   const handleSelectedProduct = (product) => {
-    console.log(product);
+    // console.log(product);
+
+    const newProducts = [...selectedProduct, product]
+    // console.log(newProducts);
+    setSelectedProduct(newProducts);
   }
+  console.log(selectedProduct);
+
 
 
 
