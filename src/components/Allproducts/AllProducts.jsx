@@ -13,7 +13,7 @@ const AllProducts = () => {
     console.log(products);
     return (
         <div>
-            <h1 className='font-bold text-black'>All Products</h1>
+            <h1 className='text-3xl pb-2 pl-5  text-black'>All Products</h1>
 
             {/* mam on singleProduct */}
             {
